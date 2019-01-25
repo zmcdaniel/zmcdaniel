@@ -23,7 +23,7 @@
         <img src="img/zoe.jpg" title="Zoe McDaniel">
     </div>
     <div class="tleft">
-        <p>I turn complex data into delightful user experiences. I facilitate end to end product development, collaborating with designers, developers, producers, and stakeholders to deliver products on time, on budget, and exceeding expectations.</p>
+        <p>I turn complex data into delightful user experiences. I facilitate end-to-end product development, collaborating with designers, developers, producers, and stakeholders to deliver products on time, on budget, and exceeding expectations.</p>
         <p>Both technically deep and business savvy, I can interface with and impact all levels and disciplines within an organization</p>
     </div>
 </div>
@@ -41,9 +41,9 @@
 
 <h2>Resume and Links</h2>
     <ul>
-        <li>Resume .PDF - <a href="files/Zoe%20McDaniel%20resume.pdfesume.pdf" target="_blank">download</a></li>
-        <li>LinkedIn - <a href="www.linkedin.com/in/zoemcdaniel" target="_blank">in/zoemcdaniel</a></li>
-        <li>GitHub - <a href="www.github.com/zmcdaniel" target="_blank">zmcdaniel</a></li>
+        <li>Resume .PDF - <a href="files/Zoe%20McDaniel%20resume.pdf" target="_blank">download</a></li>
+        <li>LinkedIn - <a href="http://www.linkedin.com/in/zoemcdaniel" target="_blank">zoemcdaniel</a></li>
+        <li>GitHub - <a href="https://www.github.com/zmcdaniel" target="_blank">zmcdaniel</a></li>
         <li>Email - <a href="mailto:zmcdaniel@gmail.com" target="_blank">zmcdaniel@gmail.com</a></li>
     </ul>
 
@@ -54,9 +54,12 @@
     var scriptSrc = [
         "js/main.js"
     ];
-    for (var i = 0; i < scriptSrc.length; i++) {
-        var index = scriptSrc[i];
-        var script = document.body.appendChild(document.createElement('script'));
+
+    // Loop through various javascript files included in /scripts/
+    var len = scriptSrc.length;
+    for (var i = 0; i < len; i++) {
+        var index = scriptSrc[i],
+            script = document.body.appendChild(document.createElement('script'));
         script.async = false;
         script.src = index;
     }
