@@ -1,6 +1,6 @@
 html {
     background-color: #fefefe;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Lato", Arial, sans-serif;
     color: #454545;
 }
 
@@ -226,4 +226,97 @@ div#invmode {
     background-color: #000;
     top: 34px;
     padding: 2px 5px
+}
+
+h1 {
+    font-family: "Arvo", Times, serif;
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Arvo", Times, serif;
+}
+
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.animated.delay-1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.animated.delay-2s {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slideInDown {
+    from {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@media (print), (prefers-reduced-motion) {
+    .animated {
+        -webkit-animation: unset !important;
+        animation: unset !important;
+        -webkit-transition: none !important;
+        transition: none !important;
+    }
 }

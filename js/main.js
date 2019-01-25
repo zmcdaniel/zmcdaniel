@@ -17,7 +17,7 @@ function vanillajQuery(id, textArr, className) {
     );
 }
 function addInvertedControl() {
-    vanillajQuery("invmode", ["Inverted mode", "Normal mode"], "inverted");
+    vanillajQuery("invmode", ["Dark mode", "Normal mode"], "inverted");
 }
 function addLeetControl() {
     vanillajQuery("leetmode", ["Leet mode", "Normal mode"], "leet");
