@@ -1,7 +1,6 @@
 "use strict";
 var clickEvent = "ontouchstart" in window ? "touchend" : "click",
     classMethods = ["remove", "add"];
-
 function vanillajQuery(id, textArr, className) {
     var el = document.getElementsByTagName("html")[0];
     var acbox = document.getElementById(id),
@@ -17,14 +16,11 @@ function vanillajQuery(id, textArr, className) {
         false
     );
 }
-
 function addInvertedControl() {
     vanillajQuery("invmode", ["Inverted mode", "Normal mode"], "inverted");
 }
-
 function addLeetControl() {
     vanillajQuery("leetmode", ["Leet mode", "Normal mode"], "leet");
 }
-
 addLeetControl();
 addInvertedControl();
