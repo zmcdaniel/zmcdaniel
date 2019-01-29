@@ -16,11 +16,33 @@ function vanillajQuery(id, textArr, className) {
         false
     );
 }
-function addInvertedControl() {
-    vanillajQuery("invmode", ["Dark mode", "Normal mode"], "inverted");
-}
+// function addDarkControl() {
+//     vanillajQuery("darkmode", ["Dark mode", "Normal mode"], "dark-mode");
+// }
 function addLeetControl() {
-    vanillajQuery("leetmode", ["Leet mode", "Normal mode"], "leet");
+    vanillajQuery("leet-mode", ["View in Leet Mode", "View in Minimal Mode"], "leet-mode");
 }
+
+function getSkiData(id) {
+    const uri = "https://snowreporting.herokuapp.com/feed";
+    $.ajax({
+        url: uri,
+        method: "GET",
+        crossDomain: true,
+        data: {
+            resortId: 80
+        }
+    }).done(function(responseObject){
+
+    });
+}
+
 addLeetControl();
-addInvertedControl();
+// addDarkControl();
+
+window.onblur=function(){
+    document.title="Zoe says come back!";
+}
+window.onfocus=function(){
+    document.title="Zoe McDaniel";
+}

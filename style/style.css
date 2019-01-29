@@ -1,231 +1,20 @@
-html {
-    background-color: #fefefe;
-    font-family: "Lato", Arial, sans-serif;
-    color: #454545;
-}
-
-.content {
-    font-size: 16px;
-    margin: 2em auto;
-    max-width: 800px;
-    padding: 1em;
-    line-height: 1.4;
-    text-align: justify
-}
-
-html.leet .overlay {
-    pointer-events: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background:
-            repeating-linear-gradient(
-                    180deg,
-                    rgba(0, 0, 0, 0) 0,
-                    rgba(0, 0, 0, 0.3) 50%,
-                    rgba(0, 0, 0, 0) 100%);
-    background-size: auto 4px;
-    z-index: 99;
-}
-
-html.leet .overlay::before {
-    content: "";
-    pointer-events: none;
-    position: absolute;
-    display: inline;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(
-            0deg,
-            transparent 0%,
-            rgba(32, 128, 32, 0.2) 2%,
-            rgba(32, 128, 32, 0.8) 3%,
-            rgba(32, 128, 32, 0.2) 3%,
-            transparent 100%);
-    background-repeat: no-repeat;
-    animation: scan 7.5s linear 0s infinite;
-}
-
-@keyframes scan {
-    0%        { background-position: 0 -100vh; }
-    35%, 100% { background-position: 0 100vh; }
-}
-
-html.leet {
-    font-family: "Ubuntu Mono", monospace !important;
-    background: #000000 radial-gradient(#11581E, #041607);
-    color: rgba(128, 255, 128, 0.8);
-    text-shadow:
-            0 0 1px rgba(51, 255, 51, 1),
-            0 0 2px rgba(255, 255, 255, 0.8);
-}
-
-html.leet img {
-    background-color: green;
-    color: green;
-    opacity: 0.5;
-}
-
-html.leet p {
-    color: rgba(128, 255, 128, 0.8);
-    text-shadow:
-            0 0 1px rgba(51, 255, 51, 0.4),
-            0 0 2px rgba(255, 255, 255, 0.8);
-}
-
-html.leet li {
-    list-style: none;
-}
-
-html.leet li::before {
-    content: "> ";
-}
-
-html.leet a {
-    color: #fff;
-    text-decoration: none;
-}
-
-html.leet a::before {
-    content: "[";
-}
-
-html.leet a::after {
-    content: "]";
-}
-
-html.inverted {
-    background-color: #010101
-}
-
-html.inverted body {
-    color: #bababa
-}
-
-html.inverted div#contrast,
-html.inverted div#invmode {
-    color: #fff;
-    background-color: #000
-}
-
-html.inverted a {
-    color: #07a
-}
-
-html.inverted a:visited {
-    color: #ac5a82
-}
-
-html.inverted {
-    background-color: #010101
-}
-
-html.inverted body {
-    color: #fff
-}
-
-html.inverted div#contrast,
-html.inverted div#invmode {
-    color: #fff;
-    background-color: #000
-}
-
-html.inverted a {
-    color: #07a
-}
-
-html.inverted a:visited {
-    color: #ac5a82
-}
-
 a {
-    color: #07a
+    transition: color .4s;
+    color: #265C83;
 }
 
+a:link,
 a:visited {
-    color: #941352
+    color: #265C83;
 }
 
-.noselect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none
+a:hover {
+    color: #7FDBFF;
 }
 
-div.fancyPositioning div.picture-left {
-    float: left;
-    width: 30%;
-    overflow: hidden;
-    margin-right: 1em
-}
-
-div.fancyPositioning div.picture-left img {
-    width: 100%
-}
-
-div.fancyPositioning div.picture-left p.caption {
-    font-size: .7em
-}
-
-div.fancyPositioning div.tleft {
-    float: left;
-    width: 65%
-}
-
-div.fancyPositioning div.tleft p:first-child {
-    margin-top: 0
-}
-
-div.fancyPositioning:after {
-    display: block;
-    content: "";
-    clear: both
-}
-
-@media screen and (max-width:500px) {
-    body {
-        text-align: left
-    }
-    div.fancyPositioning div.picture-left,
-    div.fancyPositioning div.tleft {
-        float: none;
-        width: inherit
-    }
-}
-
-div#leetmode {
-    color: #33ff00;
-    background-color: #000;
-    top: 10px;
-    padding: 2px 5px;
-    font-family: "Ubuntu Mono", monospace;
-}
-
-div#leetmode,
-div#invmode {
-    cursor: pointer;
-    position: absolute;
-    right: 10px;
-    font-size: .8em;
-    text-decoration: underline;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none
-}
-
-div#invmode {
-    color: #fff;
-    background-color: #000;
-    top: 34px;
-    padding: 2px 5px
+a:active  {
+    transition: color .3s;
+    color: #007BE6;
 }
 
 h1 {
@@ -238,6 +27,238 @@ h2 {
     font-family: "Arvo", Times, serif;
 }
 
+html {
+    background-color: #fefefe;
+    font-family: "Lato", Arial, sans-serif;
+    color: #454545;
+}
+
+strong {
+    font-style: italic;
+}
+
+/******
+Classes
+*******/
+
+
+div.about-zoe div.picture-left {
+    float: left;
+    width: 30%;
+    overflow: hidden;
+    margin-right: 1em
+}
+
+div.about-zoe div.picture-left img {
+    width: 100%
+}
+
+div.about-zoe div.about-zoe-text {
+    float: left;
+    width: 65%
+}
+
+div.about-zoe div.about-zoe-text p:first-child {
+    margin-top: 0
+}
+
+div.about-zoe:after {
+    display: block;
+    content: "";
+    clear: both
+}
+
+.content {
+    font-size: 16px;
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 1em;
+    line-height: 1.4;
+    text-align: justify
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+/*******
+IDs
+*******/
+div#leet-mode,
+div#invmode {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    font-size: .8em;
+    text-decoration: underline;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 2px 5px;
+}
+
+div#invmode {
+    color: #fff;
+    background-color: #000;
+    top: 34px;
+}
+
+div#leet-mode {
+    top: 10px;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+/*******
+ Leet mode styles
+ *******/
+
+html.leet-mode .overlay {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 115%;
+    background:
+            repeating-linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 0,
+                    rgba(0, 0, 0, 0.3) 50%,
+                    rgba(0, 0, 0, 0) 100%);
+    background-size: auto 4px;
+    z-index: 99;
+}
+
+html.leet-mode .overlay::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    display: inline;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+            0deg,
+            transparent 0%,
+            rgba(32, 128, 32, 0.2) 2%,
+            rgba(32, 128, 32, 0.8) 3%,
+            rgba(32, 128, 32, 0.2) 3%,
+            transparent 100%) no-repeat;
+    animation: scan 7.5s linear 0s infinite;
+}
+
+html.leet-mode {
+    font-family: "Ubuntu Mono", monospace !important;
+    background: #000000 radial-gradient(#11581E, #041607);
+    color: rgba(128, 255, 128, 0.8);
+    text-shadow:
+            0 0 1px rgba(51, 255, 51, 1),
+            0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+html.leet-mode h1,
+html.leet-mode h2 {
+    font-family: "Ubuntu Mono", monospace;
+}
+
+html.leet-mode .about-zoe a::before,
+html.leet-mode .about-zoe a::after {
+    content: "";
+}
+
+html.leet-mode img {
+    background-color: green;
+    color: green;
+    opacity: 0.7;
+    filter: saturate(25000%); /* Deepfry the img */
+}
+
+html.leet-mode p {
+    color: rgba(128, 255, 128, 0.8);
+    text-shadow:
+            0 0 1px rgba(51, 255, 51, 0.4),
+            0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+html.leet-mode li {
+    list-style: none;
+}
+
+html.leet-mode li::before {
+    content: "> ";
+}
+
+html.leet-mode a {
+    color: #fff;
+    text-decoration: none;
+}
+
+html.leet-mode a::before {
+    content: "[";
+}
+
+html.leet-mode a::after {
+    content: "]";
+}
+
+/*******
+Dark mode styles
+*******/
+
+html.dark-mode {
+    background-color: #010101
+}
+
+html.dark-mode body {
+    color: #bababa
+}
+
+html.dark-mode div#contrast,
+html.dark-mode div#invmode {
+    color: #fff;
+    background-color: #000
+}
+
+html.dark-mode a {
+    color: #07a
+}
+
+html.dark-mode a:visited {
+    color: #ac5a82
+}
+
+html.dark-mode {
+    background-color: #010101
+}
+
+html.dark-mode body {
+    color: #fff
+}
+
+html.dark-mode div#contrast,
+html.dark-mode div#invmode {
+    color: #fff;
+    background-color: #000
+}
+
+html.dark-mode a {
+    color: #07a
+}
+
+html.dark-mode a:visited {
+    color: #ac5a82
+}
+
+/*******
+Animations
+*******/
 
 @-webkit-keyframes fadeIn {
     from {
@@ -305,6 +326,7 @@ h2 {
     animation-name: slideInDown;
 }
 
+/* Apply this class to anything you want to animated */
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -312,11 +334,22 @@ h2 {
     animation-fill-mode: both;
 }
 
-@media (print), (prefers-reduced-motion) {
-    .animated {
-        -webkit-animation: unset !important;
-        animation: unset !important;
-        -webkit-transition: none !important;
-        transition: none !important;
+/* Used for the leet mode old-school scanning animation */
+@keyframes scan {
+    0%        { background-position: 0 -100vh; }
+    35%, 100% { background-position: 0 100vh; }
+}
+
+/*******
+Media queries
+*********/
+@media screen and (max-width:500px) {
+    body {
+        text-align: left
+    }
+    div.about-zoe div.picture-left,
+    div.about-zoe div.about-zoe-text {
+        float: none;
+        width: inherit
     }
 }
