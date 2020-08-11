@@ -103,12 +103,6 @@ div#invmode {
     padding: 2px 5px;
 }
 
-div#invmode {
-    color: #fff;
-    background-color: #000;
-    top: 34px;
-}
-
 div#leet-mode {
     top: 10px;
     font-family: "Ubuntu Mono", monospace;
@@ -206,54 +200,6 @@ html.leet-mode a::before {
 
 html.leet-mode a::after {
     content: "]";
-}
-
-/*******
-Dark mode styles
-*******/
-
-html.dark-mode {
-    background-color: #010101
-}
-
-html.dark-mode body {
-    color: #bababa
-}
-
-html.dark-mode div#contrast,
-html.dark-mode div#invmode {
-    color: #fff;
-    background-color: #000
-}
-
-html.dark-mode a {
-    color: #07a
-}
-
-html.dark-mode a:visited {
-    color: #ac5a82
-}
-
-html.dark-mode {
-    background-color: #010101
-}
-
-html.dark-mode body {
-    color: #fff
-}
-
-html.dark-mode div#contrast,
-html.dark-mode div#invmode {
-    color: #fff;
-    background-color: #000
-}
-
-html.dark-mode a {
-    color: #07a
-}
-
-html.dark-mode a:visited {
-    color: #ac5a82
 }
 
 /*******

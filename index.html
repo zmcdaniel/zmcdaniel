@@ -43,7 +43,9 @@
 <div class="animated fadeIn delay-2s">
     <h2>Highlighted Projects</h2>
     <p>As a front-end developer, design technologist, and experiential digital producer, I have experience at agencies, corporations, and startups where I partnered with names including Microsoft, eBay, USAA, HBO, Amazon, and The Walt Disney Company.</p>
+
     <ul>
+        <li><a href="https://www.playcrucible.com/en-us" target="_blank">Crucible</a>: <strong>User Interface Engineer.</strong> AAA team-based action shooter from Amazon Game Studios, featuring a Javascipt-based UI front-end, shipped in May 2020.</li>
         <li><a href="https://www.businessinsider.com/amazon-sets-traps-for-drivers-2018-9" target="_blank">Amazon package theft prevention</a>: <strong>Engineer.</strong> Web-based application to print pixel-perfect "dummy" package labels designed to identify and catch would-be package thieves.</li>
         <li><a href="https://www.nickspizzaanddeli.com/menu/index.html" target="_blank">theBlock online ordering platform</a>: <strong>Designer, Developer.</strong> Modular Vue.js platform currently being used by multiple restaurants to handle online ordering and delivery.</li>
         <li><a href="https://partner.microsoft.com/en-us/inspire" target="_blank">Microsoft Ready + Inspire</a>: <strong>Associate Producer.</strong> 2017 and 2018 Seattle and Las Vegas-based global conferences with 20,000+ attendees.</li>
@@ -63,18 +65,17 @@
     </ul>
 </div>
 
-<!--<div id="invmode">Dark mode</div>-->
 <div id="leet-mode">View in Leet Mode</div>
 </div>
 <script>
-    var scriptSrc = [
+    const scriptSrc = [
         "js/main.js"
     ];
 
     // Loop through various javascript files included in /scripts/
-    var len = scriptSrc.length;
-    for (var i = 0; i < len; i++) {
-        var index = scriptSrc[i],
+    const len = scriptSrc.length;
+    for (let i = 0; i < len; i++) {
+        let index = scriptSrc[i],
             script = document.body.appendChild(document.createElement('script'));
         script.async = false;
         script.src = index;
